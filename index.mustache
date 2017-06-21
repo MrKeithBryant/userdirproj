@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Directory</title>
+  <link href="mustache.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+  {{#users}}
+    </div>
+    <h1>{{name}}</h1>
+    <p>
+      We have users. {{name}}
+    </p>
+    <p>
+      {{#job}}
+    </p>
+    <p>
+      Occupation: {{job}}
+    </p>
+    {{/job}}
+    {{^job}}
+    <p>
+      Looking for work!
+    </p>
+    {{/job}}
+  {{/users}}
+</body>
+
+</html>
